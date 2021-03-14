@@ -29,7 +29,7 @@ def results():
             mammogramMessage = "Your family history of breast cancer means that you should begin getting mammogram screenings earlier than most. Mammograms are extremely important in detecting breast cancer."
         else:
             familyMessage = "You should already have begun scheduling yearly mammograms"
-            mammogramMessage = "Mammograms are extremely important in detecting breast cancer, and involve getting x-rays at a radiologist."
+            mammogramMessage = "Your family history of breast cancer means that you should have already begun getting mammogram screenings. Mammograms are extremely important in detecting breast cancer."
     else:
         familyHistory = "No"
         if age < 40:
