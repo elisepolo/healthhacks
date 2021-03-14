@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
+
+<head>
+    <title>appointex</title>
+    <script type="text/javascript">
+        <!--
+        function otherSelect() {
+            var other = document.getElementById("otherBox");
+            if (document.forms[0].theItems.options[document.forms[0].theItems.selectedIndex].value == "other") {
+                other.style.visibility = "visible";
+            } else {
+                other.style.visibility = "hidden";
+            }
+        }
+        //-->
+    </script>
+</head>
+
+<body>
+    <form method="POST" action="/results">
+        <h1>appointex</h1>
+        <hr>
+        <p>Input your Birthday:</p>
+        <hr>
+
+        <input type="date" name="Birthdate" value="Birthdate">
+        <hr>
+        <p>Has anyone in your family been diagnosed with Breast Cancer?</p>
+        <select name="theItems" onchange="otherSelect()">
+            <option value="item2"> </option>
+            <option value="other">Yes</option>
+            <option value="item1">No</option>
+        </select>
+
+        <div id="otherBox" style="visibility: hidden;">
+            Age when diagnosed: <input name="otherField" type="text" />
+        </div>
+        <hr>
+        <input type="submit" name="answer" value="submit">
+    </form>
+</body>
+{% endblock %}
