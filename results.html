@@ -2,10 +2,338 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Futura&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Gotham&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <title>Results</title>
 </head>
 
+<style>
+    * {
+        overflow-x: hidden;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    
+    .entire {
+        width: 100%;
+        height: 1001px;
+        background: rgba(248, 248, 248, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+    
+    .header {
+        width: 100%;
+        height: 86px;
+        opacity: 1;
+        filter: drop-shadow(0 0 0.15rem grey);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+    
+    .headerbox {
+        width: 100%;
+        height: 86px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+    
+    .headertitle {
+        width: 138px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 20px;
+        left: 80px;
+        font-family: Futura;
+        font-weight: Medium;
+        font-size: 30px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .dropdown1 {
+        width: 378px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 38px;
+        left: 900px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .dropdown2 {
+        width: 378px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 38px;
+        left: 1030px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .dropdown3 {
+        width: 378px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 38px;
+        left: 1200px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .title {
+        width: 477px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 174px;
+        left: 231px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 25px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .card1 {
+        width: 875px;
+        height: 284px;
+        opacity: 1;
+        position: absolute;
+        filter: drop-shadow(0 0 0.3rem #e0e0e0);
+        top: 236px;
+        left: 282px;
+        overflow: hidden;
+    }
+    
+    .cardbox1 {
+        width: 875px;
+        height: 284px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+    
+    .appointmentbox {
+        width: 361px;
+        height: 42px;
+        background: rgba(243, 185, 131, 1);
+        opacity: 1;
+        position: absolute;
+        top: 205px;
+        left: 41px;
+    }
+    
+    .appointment {
+        width: 300px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 215px;
+        left: 97px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .expectbox {
+        width: 361px;
+        height: 42px;
+        background: rgba(243, 185, 131, 1);
+        opacity: 1;
+        position: absolute;
+        top: 205px;
+        left: 473px;
+    }
+    
+    .expect {
+        width: 142px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 215px;
+        left: 585px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .examname {
+        width: 1000;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 41px;
+        left: 61px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 20px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .description {
+        width: 758px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 79px;
+        left: 61px;
+        font-family: Montserrat;
+        font-weight: Regular;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .card2 {
+        width: 875px;
+        height: 256px;
+        opacity: 1;
+        position: absolute;
+        filter: drop-shadow(0 0 0.3rem #e0e0e0);
+        top: 584px;
+        left: 284px;
+        overflow: hidden;
+    }
+    
+    .cardbox2 {
+        width: 875px;
+        height: 256px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+    
+    .appointmentbox2 {
+        width: 361px;
+        height: 42px;
+        background: rgba(243, 185, 131, 1);
+        opacity: 1;
+        position: absolute;
+        top: 181px;
+        left: 41px;
+    }
+    
+    .appointment2 {
+        width: 300px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 191px;
+        left: 95px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .expectbox2 {
+        width: 361px;
+        height: 42px;
+        background: rgba(243, 185, 131, 1);
+        opacity: 1;
+        position: absolute;
+        top: 181px;
+        left: 473px;
+    }
+    
+    .expect2 {
+        width: 142px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 191px;
+        left: 583px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .examname2 {
+        width: 1000px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 41px;
+        left: 61px;
+        font-family: Montserrat;
+        font-weight: Medium;
+        font-size: 20px;
+        opacity: 1;
+        text-align: left;
+    }
+    
+    .description2 {
+        width: 758px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 79px;
+        left: 61px;
+        font-family: Montserrat;
+        font-weight: Regular;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+</style>
+
 <body>
+    <div class="entire">
+        <div class="header">
+            <div class="headerbox"></div>
+            <span class="headertitle">appointex</span>
+            <span class="dropdown1">HOME</span>
+            <span class="dropdown2">ABOUT US</span>
+            <span class="dropdown3">CONTACT</span>
+        </div>
+        <span class="title">Here are the appointments for you:</span>
+        <div class="card1">
+            <div class="cardbox1"></div>
+            <div class="appointmentbox"></div>
+            <span class="appointment">Scheduling an Appointment</span>
+            <div class="expectbox"></div>
+            <span class="expect">What to Expect</span>
+            <span class="examname">{{ history }}</span>
+            <span class="description">{{ first }}</span>
+        </div>
+        <div class="card2">
+            <div class="cardbox2"></div>
+            <div class="appointmentbox2"></div>
+            <span class="appointment2">Scheduling an Appointment</span>
+            <div class="expectbox2"></div>
+            <span class="expect2">What to Expect</span>
+            <span class="examname2">{{ checkage }}</span>
+            <span class="description2">{{ second }}</span>
+        </div>
+    </div>
     <h2>{{ checkage }}</h2>
     <h2>{{ history }}</h2>
 </body>

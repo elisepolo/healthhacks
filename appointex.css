@@ -2,18 +2,20 @@
     overflow-x: hidden;
     padding: 0px !important;
     margin: 0px !important;
-  }
-  .entire {
+}
+
+.entire {
     width: 100%;
     height: 997px;
-    background: rgba(248,248,248,1);
+    background: rgba(248, 248, 248, 1);
     opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
     overflow: hidden;
-  }
-  .header {
+}
+
+.header {
     width: 100%;
     height: 86px;
     background: white;
@@ -23,21 +25,23 @@
     top: 0px;
     left: 0px;
     overflow: hidden;
-  }
-  .headerbox {
+}
+
+.headerbox {
     width: 100%;
     height: 86px;
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
     opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-  }
-  .headertitle {
+}
+
+.headertitle {
     width: 138px;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 20px;
     left: 80px;
@@ -46,10 +50,11 @@
     font-size: 30px;
     opacity: 1;
     text-align: left;
-  }
-  .dropdown1 {
+}
+
+.dropdown1 {
     width: 378px;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 38px;
     left: 900px;
@@ -58,10 +63,11 @@
     font-size: 18px;
     opacity: 1;
     text-align: left;
-  }
-  .dropdown2 {
+}
+
+.dropdown2 {
     width: 378px;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 38px;
     left: 1030px;
@@ -70,10 +76,11 @@
     font-size: 18px;
     opacity: 1;
     text-align: left;
-  }
-  .dropdown3 {
+}
+
+.dropdown3 {
     width: 378px;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 38px;
     left: 1200px;
@@ -82,11 +89,12 @@
     font-size: 18px;
     opacity: 1;
     text-align: left;
-  }
-  .box {
+}
+
+.box {
     width: 1200px;
     height: 393px;
-    background: rgba(243,185,131,1);
+    background: rgba(243, 185, 131, 1);
     opacity: 1;
     position: absolute;
     top: 139px;
@@ -97,10 +105,11 @@
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     overflow: hidden;
-  }
-  .title {
+}
+
+.title {
     width: 275px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     position: absolute;
     top: 213px;
     left: 295px;
@@ -109,10 +118,11 @@
     font-size: 60px;
     opacity: 1;
     text-align: left;
-  }
-  .description {
+}
+
+.description {
     width: 551px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     position: absolute;
     top: 335px;
     left: 570px;
@@ -121,10 +131,11 @@
     font-size: 21px;
     opacity: 1;
     text-align: center;
-  }
-  .info {
+}
+
+.info {
     width: 486px;
-    color: rgba(53,53,53,1);
+    color: rgba(53, 53, 53, 1);
     position: absolute;
     top: 637px;
     left: 477px;
@@ -133,10 +144,11 @@
     font-size: 21px;
     opacity: 1;
     text-align: center;
-  }
-  .starting {
+}
+
+.starting {
     width: 205px;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 585px;
     left: 618px;
@@ -145,11 +157,12 @@
     font-size: 24px;
     opacity: 1;
     text-align: center;
-  }
-  .inputbox {
+}
+
+.inputbox {
     width: 941px;
     height: 161px;
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
     opacity: 1;
     position: absolute;
     top: 708px;
@@ -159,10 +172,11 @@
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     overflow: hidden;
-  }
-  .input {
+}
+
+.input {
     width: 243px;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 754px;
     left: 311px;
@@ -171,5 +185,4 @@
     font-size: 21px;
     opacity: 1;
     text-align: left;
-  }
-  
+}
